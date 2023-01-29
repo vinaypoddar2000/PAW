@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: 'Open Sans', sans-serif, helvetica, Arial;
+ font-weight: 400;
+ font-size: 14px;
+ color: #fff;
+ background-image: linear-gradient(135deg, #071850, #ff00dd);
+ background-attachment: fixed;
+ background-size: cover;
+  
+}
+.header{
+    height: 15vh;
+    width: 100%;
+    padding: 1 1 8% 8%;
+    position: relative;
+    margin-top: -10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+    margin-top: 10px;
+}
+.nav_links{
+    padding: 18px 0;
+    margin-right: 30px;
+    margin-top: 8px;
+}
+.nav_links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav_links li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 1;
+    position: relative;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.nav_links li a:after{
+    content: '';
+    background: #ff00dd;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav_links li a:hover::after{
+    width: 100%;
+}
+.container {
+ max-width: 800px;
+ width: 100%;
+ margin: 0 auto;
+ margin-top: -20px;
+ margin-bottom: -30px ;
+}
+#contact {
+ padding: 20px;
+ margin: 50px 0;
+}
+#contact input, button {
+ font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
+}
+#contact h1 {
+ font-size: 35px;
+ font-weight: bold;
+ text-align: center;
+ color: #ff00dd;
+}
+#contact h3 {
+    color: #fff;
+    margin: 5px 0px 15px;
+    text-align: center;
+}
+.row {
+ display: flex;
+ width: 100% !important;
+ padding: 20px 0px;
+}
+.row .column {
+ margin: 0px 20px;
+ width: 50%;
+}
+fieldset {
+ border: medium none !important;
+ margin:  0 0 10px;
+ min-width: 100%;
+ width: 100%;
+}
+#contact input {
+ width: 100%;
+ border: 2px solid #ff00dd;
+ border-radius: 8px;
+ background-color: transparent;
+ padding: 10px;
+ margin: 5px 0;
+}
+::placeholder{
+    color: #fff;
+}
+input[type = "radio"] {
+ width: 10% !important;
+}
+#contact .row .radio {
+ border: none;
+ background-color: transparent;
+ margin: 7px 0 10px;
+ padding: 5px;
+}
+#contact .row .idCard{
+ display: flex;
+ height: 45px !important;
+ margin: 5px 0;
+}
+#contact .row #phone {
+ max-width: 100% !important;
+ padding-right: 80px;
+}
+
+#contact button {
+ outline: none;
+ border: none;
+ background-color: #ff00dd;
+ color: white;
+ margin: 0 0 5px 40%;
+ padding: 10px;
+ font-size: 17px;
+ width: 150px;
+}
+ 
+#contact button:hover {
+ background-image: linear-gradient(135deg, #071850, #ff00dd);
+}
+/* mobile responsive mode */
+@media screen and (max-width: 580px)  {
+ .row {
+  flex-direction: column;
+ }
+ .row .column {
+  width: 90% !important;
+ }
+ #contact .row #phone {
+ padding-right: 180px;
+}
+}
